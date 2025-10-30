@@ -33,7 +33,7 @@ export default function StepsSection() {
     <section className="bg-primary py-24 text-white">
       <div className="max-w-[1600px] mx-auto px-6 lg:px-16 xl:px-24 text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-semibold mb-3">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-3">
           Designed Around You,
         </h2>
         <p className="text-lg md:text-xl text-white/90 mb-14">

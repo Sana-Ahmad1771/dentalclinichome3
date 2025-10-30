@@ -51,7 +51,7 @@ export default function BeforeAfterSection() {
 
           <h2 className="text-4xl md:text-5xl font-bold leading-tight text-white">
             Real Patients, <br />
-            <span className="text-secondary">Real Smiles</span>
+            Real Smiles
           </h2>
 
           <p className="text-white/90 text-base md:text-lg leading-relaxed">

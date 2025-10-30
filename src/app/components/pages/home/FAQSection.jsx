@@ -37,10 +37,10 @@ export default function FAQSection() {
       <div className="max-w-[1600px] mx-auto px-6 lg:px-16 xl:px-24 grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
         {/* LEFT CONTENT */}
         <div>
-          <p className="uppercase text-xs tracking-[0.25em] mb-3 font-medium text-light/80">
+          <p className="text-sm tracking-[0.2em] uppercase text-white font-medium mb-3 inline-block border border-white px-4 py-2 rounded-full backdrop-blur-sm">
             FAQ
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-5 leading-snug">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
             Your Questions <br /> Answered
           </h2>
           <p className="text-light/90 text-base md:text-lg leading-relaxed max-w-[550px]">

@@ -19,7 +19,7 @@ export default function VideoSection() {
 
         {/* Optional centered text or button */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
             Experience Modern Dental Care
           </h2>
           <p className="text-lg sm:text-xl max-w-2xl">

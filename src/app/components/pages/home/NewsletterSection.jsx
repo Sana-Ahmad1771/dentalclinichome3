@@ -17,7 +17,7 @@ export default function NewsletterSection() {
           <p className="text-sm tracking-[0.2em] uppercase text-white font-medium mb-3 inline-block border border-white px-4 py-2 rounded-full bg-transparent backdrop-blur-sm">
             Newsletter
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-tight  mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight  mb-6">
             Subscribe To Our Newsletter
           </h2>
 

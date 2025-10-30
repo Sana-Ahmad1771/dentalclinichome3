@@ -27,9 +27,7 @@ export default function Home() {
       <SmileCareSection />
       <BeforeAfterSection />
       <ExperienceDentalSection />
-      
       <NextGenCleaning />
-
       <VideoSection />
       <StepsSection />
       <StatsSection />
