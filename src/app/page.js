@@ -4,6 +4,7 @@ import AboutClinic from "./components/pages/home/AboutClinic";
 import BeforeAfterSection from "./components/pages/home/BeforeAfterSection";
 import DentalCareSection from "./components/pages/home/DentalCareSection";
 import ExperienceDentalSection from "./components/pages/home/ExperienceDentalSection";
+import FAQSection from "./components/pages/home/FAQSection";
 import HeroSection from "./components/pages/home/HeroSection";
 import InforSection from "./components/pages/home/InfoSection";
 import NewsletterSection from "./components/pages/home/NewsletterSection";
@@ -13,6 +14,7 @@ import StatsSection from "./components/pages/home/StatsSection";
 import StepsSection from "./components/pages/home/StepsSection";
 import TeamSection from "./components/pages/home/TeamSection";
 import TestimonialSection from "./components/pages/home/TestimonialSection";
+import VideoSection from "./components/pages/home/VideoSection";
 
 export default function Home() {
   return (
@@ -25,10 +27,14 @@ export default function Home() {
       <SmileCareSection />
       <BeforeAfterSection />
       <ExperienceDentalSection />
-      <TeamSection />
+      
       <NextGenCleaning />
+
+      <VideoSection />
       <StepsSection />
       <StatsSection />
+      <TeamSection />
+      <FAQSection />
       <TestimonialSection />
       <NewsletterSection />
       <Footer />
