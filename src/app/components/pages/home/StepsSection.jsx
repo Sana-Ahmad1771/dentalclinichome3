@@ -11,7 +11,7 @@ export default function StepsSection() {
     },
     {
       id: 2,
-      image: "/images/about-11.png",
+      image: "/images/about-11.jpg",
       title: "Meet Your Smile Strategist",
       desc: "We begin with conversation, not a clipboard. Your goals, lifestyle, and preferences shape everything we do next.",
     },

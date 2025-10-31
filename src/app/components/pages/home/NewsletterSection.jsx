@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import newsletterBg from "../../../../../public/images/newsletter-bg.jpg";
-import dentalImg from "../../../../../public/images/implant-image.png";
+import dentalImg from "../../../../../public/images/implant-image.jpg";
 
 export default function NewsletterSection() {
   return (
