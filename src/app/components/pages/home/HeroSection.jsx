@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
@@ -65,9 +66,22 @@ export default function HeroSection() {
                 initial={{ scale: 1.1 }}
                 animate={{ scale: activeIndex === index ? 1 : 1.1 }}
                 transition={{ duration: 6, ease: "easeInOut" }}
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${slide.image})` }}
-              />
+                className="absolute inset-0"
+                style={{ willChange: "transform" }}
+              >
+                <Image
+                  src={slide.image}
+                  alt={slide.titleLine1}
+                  fill
+                  className="object-cover object-center"
+                  sizes="100vw"
+                  quality={75}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  priority={index === 0}
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI2Ij48cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iNiIgZmlsbD0iI2YwZjBmMCIvPjwvc3ZnPg=="
+                />
+              </motion.div>
 
               {/* Gradient Overlay */}
               <div
