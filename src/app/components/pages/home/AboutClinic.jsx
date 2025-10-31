@@ -37,7 +37,7 @@ export default function AboutClinic() {
               className="absolute left-1/2 bottom-[-60px] -translate-x-1/2 w-[250px] md:w-[300px] border-[6px] border-light rounded-3xl overflow-hidden shadow-2xl bg-light z-20"
             >
               <Image
-                src="/images/about-22.png"
+                src="/images/about-22.jpg"
                 alt="Dentist working"
                 width={300}
                 height={250}
