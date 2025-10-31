@@ -45,14 +45,14 @@ const Header = () => {
       <div className="bg-primary border-b border-primary/10">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-16 xl:px-24 flex justify-between items-center h-12 text-sm font-light text-white">
           {/* --- Contact Info --- */}
-          <div className="flex flex-wrap items-center gap-4">
-            <span className="flex items-center gap-2">
+          <div className="flex flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm">
+            <span className="flex items-center gap-1 sm:gap-2 whitespace-nowrap">
               <FiPhone className="text-secondary" />
               <span className="cursor-pointer hover:text-secondary transition-colors">
                 +971-2-xxxxx
               </span>
             </span>
-            <span className="flex items-center gap-2">
+            <span className="flex items-center gap-1 sm:gap-2 whitespace-nowrap">
               <MdOutlineEmail className="text-secondary" />
               <span className="cursor-pointer hover:text-secondary transition-colors">
                 info@Dentalclinic.com

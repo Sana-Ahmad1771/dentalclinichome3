@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function NextGenCleaning() {
   return (
     <section className="relative py-24 bg-white overflow-hidden">
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-16 xl:px-24 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-16 xl:px-24 grid lg:grid-cols-2 gap-12 items-center">
         {/* left Side - Video */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
@@ -15,13 +15,20 @@ export default function NextGenCleaning() {
           className="relative rounded-2xl overflow-hidden shadow-xl"
         >
           <video
-            src="/videos/dental-video.mp4"
             autoPlay
             muted
             loop
             playsInline
+            loading="lazy"
+            preload="none"
+            poster="/images/video-poster.jpg"
+            width="720"
+            height="405"
             className="w-full h-full object-cover"
-          />
+          >
+            <source src="/videos/dental-video.webm" type="video/webm" />
+            <source src="/videos/dental-video.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-black/10"></div>
         </motion.div>
         {/*  right Side - Text Content */}

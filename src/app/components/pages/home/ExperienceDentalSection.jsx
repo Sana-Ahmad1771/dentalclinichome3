@@ -1,6 +1,7 @@
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import React, { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 import {
   FaMagic,
   FaCalendarCheck,
@@ -61,9 +62,16 @@ function ImageSlider({ images, scrollDirection, speed = 30 }) {
             key={idx}
             className="relative shrink-0 max-w-full h-[170px] sm:h-[180px] md:h-[190px] lg:h-[250px] w-60 sm:w-[320px] md:w-[370px] xl:w-[400px] flex items-center justify-center"
           >
-            <img
+            <Image
               src={image.src}
               alt={image.alt}
+              fill
+              sizes="(max-width: 640px) 240px, (max-width: 768px) 320px, (max-width: 1024px) 370px, 400px"
+              quality={75}
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${Buffer.from(
+                '<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="250" fill="#f0f0f0"/></svg>'
+              ).toString('base64')}`}
               className="max-w-full rounded-2xl h-full w-full object-cover object-center"
               loading="lazy"
             />
@@ -127,22 +135,32 @@ export default function ExperienceDentalSection() {
     {
       alt: "Dental Room 1",
       src: "/images/dental-room-11.jpg",
+      width: 400,
+      height: 250
     },
     {
       alt: "Dental Room 2",
       src: "/images/dental-room-22.jpg",
+      width: 400,
+      height: 250
     },
     {
       alt: "Dental Room 3",
       src: "/images/dental-room-33.jpg",
+      width: 400,
+      height: 250
     },
     {
       alt: "Smiling Patient",
       src: "/images/smillingpatient.jpg",
+      width: 400,
+      height: 250
     },
     {
       alt: "Dental Sink Area",
       src: "/images/dental-room-44.jpg",
+      width: 400,
+      height: 250
     },
   ];
 
@@ -181,7 +199,7 @@ export default function ExperienceDentalSection() {
         {/* Header + Features */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-tight ">
-            Experience Dental Done <br /> <span className="text-primary">Differently</span> 
+            Experience Dental Done <br className="hidden md:block" /> <span className="text-primary">Differently</span> 
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-10">

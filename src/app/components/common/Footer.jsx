@@ -59,7 +59,7 @@ const Footer = () => {
                 onClick={() => onClickCopy("(239) 555-0108")}
                 className="cursor-pointer hover:underline underline-offset-4"
               >
-                +971-4–4520022
+                +971-4–xxxx
               </span>
             </div>
             <div className="flex items-center gap-2">
@@ -68,7 +68,7 @@ const Footer = () => {
                 onClick={() => onClickCopy("info@binali.xyz")}
                 className="cursor-pointer hover:underline underline-offset-4"
               >
-                info@binalimed.com
+                info@Dentalclinic.com
               </span>
             </div>
           </div>
@@ -82,27 +82,39 @@ const Footer = () => {
           viewport={{ once: true }}
           className="min-w-[200px]"
         >
-          <h3 className="text-xl font-semibold mb-5 text-dark-2">
+          <h3 className="text-xl font-semibold mb-5 text-secondary">
             Quick Links
           </h3>
           <ul className="space-y-3 text-[16px] text-gray-700">
             <li>
-              <Link href="/" className="hover:text-primary">Home</Link>
+              <Link href="/" className="hover:text-primary">
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-primary">About Us</Link>
+              <Link href="/" className="hover:text-primary">
+                About Us
+              </Link>
             </li>
             <li>
-              <Link href="/products" className="hover:text-primary">Our Products</Link>
+              <Link href="/products" className="hover:text-primary">
+                Our Products
+              </Link>
             </li>
             <li>
-              <Link href="/partners" className="hover:text-primary">Our Partners</Link>
+              <Link href="/partners" className="hover:text-primary">
+                Our Partners
+              </Link>
             </li>
             <li>
-              <Link href="/career" className="hover:text-primary">Career</Link>
+              <Link href="/career" className="hover:text-primary">
+                Career
+              </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-primary">Contact</Link>
+              <Link href="/contact" className="hover:text-primary">
+                Contact
+              </Link>
             </li>
           </ul>
         </motion.div>
@@ -115,7 +127,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="min-w-[200px]"
         >
-          <h3 className="text-xl font-semibold mb-5 text-dark-2">MOH</h3>
+          <h3 className="text-xl font-semibold mb-5 text-secondary">MOH</h3>
           <ul className="space-y-3 text-[16px] text-gray-700">
             <li>APPROVAL NUMBER:</li>
             <li className="font-semibold text-secondary">8AEVFQ0O-281024</li>
@@ -131,7 +143,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="flex-1 min-w-[220px] lg:max-w-[25%]"
         >
-          <h3 className="text-xl font-semibold mb-5 text-dark-2">
+          <h3 className="text-xl font-semibold mb-5 text-secondary">
             Branch Offices
           </h3>
           <p className="mb-6 text-[16px] text-gray-700 leading-relaxed">

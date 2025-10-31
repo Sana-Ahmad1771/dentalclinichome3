@@ -12,6 +12,8 @@ const services = [
     description: "3D scan, bite analysis, and custom aligner treatment.",
     btn: "BOOK CONSULTATION",
     img: "/images/glame.jpg",
+    width: 300,
+    height: 192,
   },
   {
     id: 2,
@@ -19,6 +21,8 @@ const services = [
     description: "Dentist-developed gel whitening treatment.",
     btn: "BOOK WHITENING",
     img: "/images/white-teeth.jpg",
+    width: 300,
+    height: 192,
   },
   {
     id: 3,
@@ -26,6 +30,8 @@ const services = [
     description: "Powerful clean. Comfort-first tech. Gentle by design.",
     btn: "BOOK CLEANING",
     img: "/images/cleaning.jpg",
+    width: 300,
+    height: 192,
   },
   {
     id: 4,
@@ -33,6 +39,8 @@ const services = [
     description: "Advanced oral exam and comprehensive imaging.",
     btn: "BOOK EXAM & X-RAYS",
     img: "/images/oralexam.jpg",
+    width: 300,
+    height: 192,
   },
   {
     id: 5,
@@ -40,6 +48,8 @@ const services = [
     description: "The custom nightguard that protects your smile.",
     btn: "BOOK GLEAMGUARD",
     img: "/images/guard.jpg",
+    width: 300,
+    height: 192,
   },
   {
     id: 6,
@@ -47,6 +57,8 @@ const services = [
     description: "NO drills.No Needles. Non-invasive cavity treatment.",
     btn: "BOOK GLEAMGUARD",
     img: "/images/anticavity.jpg",
+    width: 300,
+    height: 192,
   },
 ];
 
@@ -94,6 +106,13 @@ export default function SmileCareSection() {
                       src={service.img}
                       alt={service.title}
                       fill
+                      sizes="(max-width: 640px) 280px, 300px"
+                      quality={75}
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={`data:image/svg+xml;base64,${Buffer.from(
+                        '<svg width="300" height="192" xmlns="http://www.w3.org/2000/svg"><rect width="300" height="192" fill="#f0f0f0"/></svg>'
+                      ).toString('base64')}`}
                       className="object-cover rounded-2xl"
                     />
                   </div>
