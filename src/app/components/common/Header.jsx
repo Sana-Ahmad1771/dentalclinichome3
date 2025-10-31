@@ -134,7 +134,7 @@ const Header = () => {
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="fixed top-0 left-0 w-full h-screen bg-secondary z-[200] text-white flex flex-col px-6 pt-6 overflow-y-auto"
+              className="fixed top-0 left-0 w-full h-screen bg-secondary z-200 text-white flex flex-col px-6 pt-6 overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-6">
                 <Link

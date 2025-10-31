@@ -11,7 +11,7 @@ export default function DentalCareSection() {
 
       {/* Top Right Decorative Image - More Professional */}
       <div className="absolute top-0 right-0 opacity-80">
-        <div className="relative w-[160px] sm:w-[220px] md:w-[280px] lg:w-[360px]">
+        <div className="relative w-40 sm:w-[220px] md:w-[280px] lg:w-[360px]">
           <Image
             src="/images/hero-1.jpg"
             alt="Smiling patient"
